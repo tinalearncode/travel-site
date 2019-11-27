@@ -3,6 +3,7 @@
   color: #ffffff;
   text-decoration: none;
   padding: 0.75rem 1.2rem;
+  cursor: pointer !important;
   display: inline-block;
 
   &--orange {
@@ -15,5 +16,24 @@
     @mixin atSmall {
       font-size: 1.25rem;
     }
+  }
+
+  &--circle {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $mainBlue;
+    border: 2px solid $mainBlue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  &--fixed-bottom-right {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
   }
 }
