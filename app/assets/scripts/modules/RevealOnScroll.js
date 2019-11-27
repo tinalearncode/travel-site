@@ -18,14 +18,14 @@ class RevealOnScroll {
     window.addEventListener(
       'resize',
       debounce(() => {
-        console.log('rize run')
+        //console.log('rize run')
         this.browserHeight = window.innerHeight
       }, 300)
     )
   }
 
   calcCaller() {
-    console.log('scroll run')
+    //console.log('scroll run')
     this.itemsToReveal.forEach(el => {
       if (el.isRevealed == false) {
         this.calculateIfScrolledTo(el)
@@ -35,7 +35,7 @@ class RevealOnScroll {
 
   calculateIfScrolledTo(el) {
     if (window.scrollY + this.browserHeight > el.offsetTop) {
-      console.log('Calculate')
+      //console.log('Calculate')
       let scrollPersent =
         (el.getBoundingClientRect().y / this.browserHeight) * 100
       if (scrollPersent < this.thresholdPercent) {
