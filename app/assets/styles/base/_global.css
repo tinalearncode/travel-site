@@ -19,3 +19,6 @@ img {
 a {
   color: $mainOrange;
 }
+button:focus {
+  outline: 0;
+}
