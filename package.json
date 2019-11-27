@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,13 +21,23 @@
   "homepage": "https://github.com/tinalearncode/travel-site#readme",
   "dependencies": {
     "autoprefixer": "^9.7.2",
+    "lazysizes": "^5.2.0-beta1",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "fs-extra": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-hexrgba": "^2.0.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.3",
